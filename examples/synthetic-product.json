@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "product": {"key": "DEMO-ONLY", "name": "合成示例宠物用品", "hero_sku": "DEMO-GRAY", "identity_status": "USER_PROVIDED", "selected_skus": ["DEMO-GRAY"], "sales_unit_count": 1},
+  "sources": [{"id": "demo", "kind": "synthetic", "description": "纯合成，不代表本店、同行或真实商品"}],
+  "facts": [{"key": "color", "value": "灰色", "status": "USER_PROVIDED", "source_ids": ["demo"]}],
+  "unknowns": [{"key": "packed_weight", "affects": ["strategy"], "question": "包装后计费重未知，不输出可执行售价"}],
+  "authorizations": {"scope": "合成示例，仅准备", "generation": false, "publication": false, "shop_write": false, "workbook_write": false},
+  "requested_output": "基于已知信息给可执行准备稿，缺证部分保留未知"
+}

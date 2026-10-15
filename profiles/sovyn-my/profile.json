@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "name": "Sovyn MY Pet",
+  "market": "MY",
+  "category": "pet_supplies",
+  "communication_language": "zh-CN",
+  "listing_language": "ms-MY",
+  "currency": "MYR",
+  "cost_currency": "CNY",
+  "supply_model": "1688_single_order_via_china_forwarder",
+  "channels": ["self_made_short_video", "product_card"],
+  "optional_channels": ["affiliate", "ads", "livestream"],
+  "image_set": {"count": 8, "white_hero": 1, "scene_hero": 1, "details": 6, "sku_selection_pages": 1},
+  "video_project_choice": {"duration_range_seconds": [15, 30], "aspect_ratio": "9:16", "fixed_shots": false, "fixed_story": false},
+  "sources": {
+    "project": "AGENTS.md",
+    "selection": "docs/TK_MY_PET_20K_MONTHLY_EXECUTION_PLAN.md",
+    "research": "docs/TK_MY_WEEKLY_120_SELECTION_LISTING_SOP.md",
+    "daily": "docs/TK_MY_DAILY_TASK_LITE_GUIDE.md",
+    "playbook": "docs/TK_MY_0_TO_1_OPERATIONS_PLAYBOOK.md",
+    "keywords": "docs/TK_MY_PET_KEYWORD_LIBRARY.md",
+    "images": "docs/TK_MY_PET_HERO_IMAGE_DESIGN_STANDARD.md",
+    "ugc": "docs/TK_MY_UGC_CONTENT_BRANCH_V1.md",
+    "positioning": "docs/TK_MY_CONTENT_POSITIONING_V2.md",
+    "production": "docs/TK_MY_VIDEO_PRODUCTION_SOP_V1.md"
+  },
+  "modules": {
+    "market": {"folder": "01_Market_Research_Agent", "sources": ["project", "selection", "research"]},
+    "strategy": {"folder": "02_Product_Strategy_Agent", "sources": ["project", "daily", "playbook"]},
+    "listing": {"folder": "03_Listing_Creative_Agent", "sources": ["project", "daily", "playbook", "keywords"]},
+    "image": {"folder": "04_Product_Image_Agent", "sources": ["project", "daily", "images"]},
+    "video": {"folder": "05_Product_Video_Agent", "sources": ["project", "ugc", "positioning", "production"]},
+    "performance": {"folder": "06_Organic_Performance_Agent", "sources": ["project", "daily", "playbook", "ugc"]},
+    "review": {"folder": "07_Review_Analysis_Agent", "sources": ["project", "playbook", "images"]}
+  },
+  "evidence_statuses": ["CONFIRMED_OFFICIAL", "CONFIRMED_BACKEND", "USER_PROVIDED", "THIRD_PARTY_DATA", "CALCULATED", "INFERRED", "NOT_VERIFIED", "ACCESS_BLOCKED"],
+  "workbook_relative_path": "outputs/operations/pet-workbench/SOVYN_PET_WORKBENCH.xlsx",
+  "authority": "Live bound project documents override this routing summary; current official/backend facts override stale records."
+}

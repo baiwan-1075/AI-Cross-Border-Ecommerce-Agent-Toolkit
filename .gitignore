@@ -46,3 +46,21 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# Sovyn: real business material and local bindings never enter Git
+.local/
+__pycache__/
+*.py[cod]
+*.db
+*.db-*
+*.sqlite*
+*.xlsx
+*.xlsm
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.zip
+*.bak
